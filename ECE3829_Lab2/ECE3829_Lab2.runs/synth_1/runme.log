@@ -1,0 +1,345 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Tue Feb 11 04:03:15 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 9544
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1037.371 ; gain = 468.180
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'db_btnR', assumed default net type 'wire' [C:/Users/Ryab Ranjitkar/Documents/ECE3829/ECE3829_Lab2/ECE3829_Lab2.srcs/sources_1/new/top.v:61]
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/Ryab Ranjitkar/Documents/ECE3829/ECE3829_Lab2/ECE3829_Lab2.srcs/sources_1/new/top.v:28]
+INFO: [Synth 8-6157] synthesizing module 'clk_mmcm' [C:/Users/Ryab Ranjitkar/Documents/ECE3829/ECE3829_Lab2/ECE3829_Lab2.runs/synth_1/.Xil/Vivado-11332-YourMum/realtime/clk_mmcm_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'clk_mmcm' (0#1) [C:/Users/Ryab Ranjitkar/Documents/ECE3829/ECE3829_Lab2/ECE3829_Lab2.runs/synth_1/.Xil/Vivado-11332-YourMum/realtime/clk_mmcm_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'debounce' [C:/Users/Ryab Ranjitkar/Documents/ECE3829/ECE3829_Lab2/ECE3829_Lab2.srcs/sources_1/new/debounce.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'debounce' (0#1) [C:/Users/Ryab Ranjitkar/Documents/ECE3829/ECE3829_Lab2/ECE3829_Lab2.srcs/sources_1/new/debounce.v:24]
+INFO: [Synth 8-6157] synthesizing module 'seven_seg_display' [C:/Users/Ryab Ranjitkar/Documents/ECE3829/ECE3829_Lab2/ECE3829_Lab2.srcs/sources_1/new/seven_seg_display.v:26]
+INFO: [Synth 8-6157] synthesizing module 'an_cycle' [C:/Users/Ryab Ranjitkar/Documents/ECE3829/ECE3829_Lab2/ECE3829_Lab2.srcs/sources_1/new/an_cycle.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'an_cycle' (0#1) [C:/Users/Ryab Ranjitkar/Documents/ECE3829/ECE3829_Lab2/ECE3829_Lab2.srcs/sources_1/new/an_cycle.v:24]
+INFO: [Synth 8-6157] synthesizing module 'seg_sel' [C:/Users/Ryab Ranjitkar/Documents/ECE3829/ECE3829_Lab2/ECE3829_Lab2.srcs/sources_1/new/seg_sel.v:24]
+INFO: [Synth 8-226] default block is never used [C:/Users/Ryab Ranjitkar/Documents/ECE3829/ECE3829_Lab2/ECE3829_Lab2.srcs/sources_1/new/seg_sel.v:44]
+INFO: [Synth 8-6155] done synthesizing module 'seg_sel' (0#1) [C:/Users/Ryab Ranjitkar/Documents/ECE3829/ECE3829_Lab2/ECE3829_Lab2.srcs/sources_1/new/seg_sel.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'seven_seg_display' (0#1) [C:/Users/Ryab Ranjitkar/Documents/ECE3829/ECE3829_Lab2/ECE3829_Lab2.srcs/sources_1/new/seven_seg_display.v:26]
+INFO: [Synth 8-6157] synthesizing module 'vga_sel' [C:/Users/Ryab Ranjitkar/Documents/ECE3829/ECE3829_Lab2/ECE3829_Lab2.srcs/sources_1/new/vga_sel.v:31]
+INFO: [Synth 8-638] synthesizing module 'vga_controller_640_60' [C:/Users/Ryab Ranjitkar/Documents/ECE3829/ECE3829_Lab2/ECE3829_Lab2.srcs/sources_1/imports/Downloads/vga_controller_640_60.vhd:88]
+INFO: [Synth 8-256] done synthesizing module 'vga_controller_640_60' (0#1) [C:/Users/Ryab Ranjitkar/Documents/ECE3829/ECE3829_Lab2/ECE3829_Lab2.srcs/sources_1/imports/Downloads/vga_controller_640_60.vhd:88]
+INFO: [Synth 8-6157] synthesizing module 'vga_yellowScreen' [C:/Users/Ryab Ranjitkar/Documents/ECE3829/ECE3829_Lab2/ECE3829_Lab2.srcs/sources_1/new/yellow_screen.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'vga_yellowScreen' (0#1) [C:/Users/Ryab Ranjitkar/Documents/ECE3829/ECE3829_Lab2/ECE3829_Lab2.srcs/sources_1/new/yellow_screen.v:22]
+WARNING: [Synth 8-689] width (11) of port connection 'hcount' does not match port width (12) of module 'vga_yellowScreen' [C:/Users/Ryab Ranjitkar/Documents/ECE3829/ECE3829_Lab2/ECE3829_Lab2.srcs/sources_1/new/vga_sel.v:66]
+WARNING: [Synth 8-689] width (11) of port connection 'vcount' does not match port width (12) of module 'vga_yellowScreen' [C:/Users/Ryab Ranjitkar/Documents/ECE3829/ECE3829_Lab2/ECE3829_Lab2.srcs/sources_1/new/vga_sel.v:67]
+INFO: [Synth 8-6157] synthesizing module 'vga_redWhiteBars' [C:/Users/Ryab Ranjitkar/Documents/ECE3829/ECE3829_Lab2/ECE3829_Lab2.srcs/sources_1/new/red_white_bars.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'vga_redWhiteBars' (0#1) [C:/Users/Ryab Ranjitkar/Documents/ECE3829/ECE3829_Lab2/ECE3829_Lab2.srcs/sources_1/new/red_white_bars.v:22]
+WARNING: [Synth 8-689] width (11) of port connection 'hcount' does not match port width (12) of module 'vga_redWhiteBars' [C:/Users/Ryab Ranjitkar/Documents/ECE3829/ECE3829_Lab2/ECE3829_Lab2.srcs/sources_1/new/vga_sel.v:78]
+WARNING: [Synth 8-689] width (11) of port connection 'vcount' does not match port width (12) of module 'vga_redWhiteBars' [C:/Users/Ryab Ranjitkar/Documents/ECE3829/ECE3829_Lab2/ECE3829_Lab2.srcs/sources_1/new/vga_sel.v:79]
+INFO: [Synth 8-6157] synthesizing module 'vga_greenBlock' [C:/Users/Ryab Ranjitkar/Documents/ECE3829/ECE3829_Lab2/ECE3829_Lab2.srcs/sources_1/new/green_block.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'vga_greenBlock' (0#1) [C:/Users/Ryab Ranjitkar/Documents/ECE3829/ECE3829_Lab2/ECE3829_Lab2.srcs/sources_1/new/green_block.v:23]
+WARNING: [Synth 8-689] width (11) of port connection 'hcount' does not match port width (12) of module 'vga_greenBlock' [C:/Users/Ryab Ranjitkar/Documents/ECE3829/ECE3829_Lab2/ECE3829_Lab2.srcs/sources_1/new/vga_sel.v:90]
+WARNING: [Synth 8-689] width (11) of port connection 'vcount' does not match port width (12) of module 'vga_greenBlock' [C:/Users/Ryab Ranjitkar/Documents/ECE3829/ECE3829_Lab2/ECE3829_Lab2.srcs/sources_1/new/vga_sel.v:91]
+INFO: [Synth 8-6157] synthesizing module 'vga_blueStripe' [C:/Users/Ryab Ranjitkar/Documents/ECE3829/ECE3829_Lab2/ECE3829_Lab2.srcs/sources_1/new/blue_stripe.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'vga_blueStripe' (0#1) [C:/Users/Ryab Ranjitkar/Documents/ECE3829/ECE3829_Lab2/ECE3829_Lab2.srcs/sources_1/new/blue_stripe.v:22]
+WARNING: [Synth 8-689] width (11) of port connection 'hcount' does not match port width (12) of module 'vga_blueStripe' [C:/Users/Ryab Ranjitkar/Documents/ECE3829/ECE3829_Lab2/ECE3829_Lab2.srcs/sources_1/new/vga_sel.v:102]
+WARNING: [Synth 8-689] width (11) of port connection 'vcount' does not match port width (12) of module 'vga_blueStripe' [C:/Users/Ryab Ranjitkar/Documents/ECE3829/ECE3829_Lab2/ECE3829_Lab2.srcs/sources_1/new/vga_sel.v:103]
+INFO: [Synth 8-6157] synthesizing module 'vga_movingBlock' [C:/Users/Ryab Ranjitkar/Documents/ECE3829/ECE3829_Lab2/ECE3829_Lab2.srcs/sources_1/new/vga_movingblock.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'vga_movingBlock' (0#1) [C:/Users/Ryab Ranjitkar/Documents/ECE3829/ECE3829_Lab2/ECE3829_Lab2.srcs/sources_1/new/vga_movingblock.v:22]
+WARNING: [Synth 8-689] width (11) of port connection 'hcount' does not match port width (12) of module 'vga_movingBlock' [C:/Users/Ryab Ranjitkar/Documents/ECE3829/ECE3829_Lab2/ECE3829_Lab2.srcs/sources_1/new/vga_sel.v:115]
+WARNING: [Synth 8-689] width (11) of port connection 'vcount' does not match port width (12) of module 'vga_movingBlock' [C:/Users/Ryab Ranjitkar/Documents/ECE3829/ECE3829_Lab2/ECE3829_Lab2.srcs/sources_1/new/vga_sel.v:116]
+INFO: [Synth 8-226] default block is never used [C:/Users/Ryab Ranjitkar/Documents/ECE3829/ECE3829_Lab2/ECE3829_Lab2.srcs/sources_1/new/vga_sel.v:130]
+INFO: [Synth 8-6155] done synthesizing module 'vga_sel' (0#1) [C:/Users/Ryab Ranjitkar/Documents/ECE3829/ECE3829_Lab2/ECE3829_Lab2.srcs/sources_1/new/vga_sel.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [C:/Users/Ryab Ranjitkar/Documents/ECE3829/ECE3829_Lab2/ECE3829_Lab2.srcs/sources_1/new/top.v:28]
+WARNING: [Synth 8-7129] Port clk in module vga_blueStripe is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset_n in module vga_blueStripe is either unconnected or has no load
+WARNING: [Synth 8-7129] Port hcount[11] in module vga_blueStripe is either unconnected or has no load
+WARNING: [Synth 8-7129] Port hcount[10] in module vga_blueStripe is either unconnected or has no load
+WARNING: [Synth 8-7129] Port hcount[9] in module vga_blueStripe is either unconnected or has no load
+WARNING: [Synth 8-7129] Port hcount[8] in module vga_blueStripe is either unconnected or has no load
+WARNING: [Synth 8-7129] Port hcount[7] in module vga_blueStripe is either unconnected or has no load
+WARNING: [Synth 8-7129] Port hcount[6] in module vga_blueStripe is either unconnected or has no load
+WARNING: [Synth 8-7129] Port hcount[5] in module vga_blueStripe is either unconnected or has no load
+WARNING: [Synth 8-7129] Port hcount[4] in module vga_blueStripe is either unconnected or has no load
+WARNING: [Synth 8-7129] Port hcount[3] in module vga_blueStripe is either unconnected or has no load
+WARNING: [Synth 8-7129] Port hcount[2] in module vga_blueStripe is either unconnected or has no load
+WARNING: [Synth 8-7129] Port hcount[1] in module vga_blueStripe is either unconnected or has no load
+WARNING: [Synth 8-7129] Port hcount[0] in module vga_blueStripe is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module vga_greenBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset_n in module vga_greenBlock is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module vga_redWhiteBars is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset_n in module vga_redWhiteBars is either unconnected or has no load
+WARNING: [Synth 8-7129] Port hcount[11] in module vga_redWhiteBars is either unconnected or has no load
+WARNING: [Synth 8-7129] Port hcount[10] in module vga_redWhiteBars is either unconnected or has no load
+WARNING: [Synth 8-7129] Port hcount[9] in module vga_redWhiteBars is either unconnected or has no load
+WARNING: [Synth 8-7129] Port hcount[8] in module vga_redWhiteBars is either unconnected or has no load
+WARNING: [Synth 8-7129] Port hcount[7] in module vga_redWhiteBars is either unconnected or has no load
+WARNING: [Synth 8-7129] Port hcount[6] in module vga_redWhiteBars is either unconnected or has no load
+WARNING: [Synth 8-7129] Port hcount[5] in module vga_redWhiteBars is either unconnected or has no load
+WARNING: [Synth 8-7129] Port hcount[3] in module vga_redWhiteBars is either unconnected or has no load
+WARNING: [Synth 8-7129] Port hcount[2] in module vga_redWhiteBars is either unconnected or has no load
+WARNING: [Synth 8-7129] Port hcount[1] in module vga_redWhiteBars is either unconnected or has no load
+WARNING: [Synth 8-7129] Port hcount[0] in module vga_redWhiteBars is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vcount[11] in module vga_redWhiteBars is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vcount[10] in module vga_redWhiteBars is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vcount[9] in module vga_redWhiteBars is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vcount[8] in module vga_redWhiteBars is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vcount[7] in module vga_redWhiteBars is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vcount[6] in module vga_redWhiteBars is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vcount[5] in module vga_redWhiteBars is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vcount[4] in module vga_redWhiteBars is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vcount[3] in module vga_redWhiteBars is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vcount[2] in module vga_redWhiteBars is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vcount[1] in module vga_redWhiteBars is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vcount[0] in module vga_redWhiteBars is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module vga_yellowScreen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset_n in module vga_yellowScreen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port hcount[11] in module vga_yellowScreen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port hcount[10] in module vga_yellowScreen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port hcount[9] in module vga_yellowScreen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port hcount[8] in module vga_yellowScreen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port hcount[7] in module vga_yellowScreen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port hcount[6] in module vga_yellowScreen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port hcount[5] in module vga_yellowScreen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port hcount[4] in module vga_yellowScreen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port hcount[3] in module vga_yellowScreen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port hcount[2] in module vga_yellowScreen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port hcount[1] in module vga_yellowScreen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port hcount[0] in module vga_yellowScreen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vcount[11] in module vga_yellowScreen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vcount[10] in module vga_yellowScreen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vcount[9] in module vga_yellowScreen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vcount[8] in module vga_yellowScreen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vcount[7] in module vga_yellowScreen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vcount[6] in module vga_yellowScreen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vcount[5] in module vga_yellowScreen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vcount[4] in module vga_yellowScreen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vcount[3] in module vga_yellowScreen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vcount[2] in module vga_yellowScreen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vcount[1] in module vga_yellowScreen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vcount[0] in module vga_yellowScreen is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1144.723 ; gain = 575.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1144.723 ; gain = 575.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1144.723 ; gain = 575.531
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1144.723 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Ryab Ranjitkar/Documents/ECE3829/ECE3829_Lab2/ECE3829_Lab2.gen/sources_1/ip/clk_mmcm/clk_mmcm/clk_mmcm_in_context.xdc] for cell 'clk_out'
+Finished Parsing XDC File [c:/Users/Ryab Ranjitkar/Documents/ECE3829/ECE3829_Lab2/ECE3829_Lab2.gen/sources_1/ip/clk_mmcm/clk_mmcm/clk_mmcm_in_context.xdc] for cell 'clk_out'
+Parsing XDC File [C:/Users/Ryab Ranjitkar/Documents/ECE3829/ECE3829_Lab2/ECE3829_Lab2.srcs/constrs_1/new/constraints.xdc]
+Finished Parsing XDC File [C:/Users/Ryab Ranjitkar/Documents/ECE3829/ECE3829_Lab2/ECE3829_Lab2.srcs/constrs_1/new/constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Ryab Ranjitkar/Documents/ECE3829/ECE3829_Lab2/ECE3829_Lab2.srcs/constrs_1/new/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1230.734 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1230.734 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1230.734 ; gain = 661.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1230.734 ; gain = 661.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  {c:/Users/Ryab Ranjitkar/Documents/ECE3829/ECE3829_Lab2/ECE3829_Lab2.gen/sources_1/ip/clk_mmcm/clk_mmcm/clk_mmcm_in_context.xdc}, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  {c:/Users/Ryab Ranjitkar/Documents/ECE3829/ECE3829_Lab2/ECE3829_Lab2.gen/sources_1/ip/clk_mmcm/clk_mmcm/clk_mmcm_in_context.xdc}, line 4).
+Applied set_property KEEP_HIERARCHY = SOFT for clk_out. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1230.734 ; gain = 661.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1230.734 ; gain = 661.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   13 Bit       Adders := 1     
+	   2 Input   11 Bit       Adders := 2     
+	   2 Input    9 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 2     
+	                9 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   3 Input   12 Bit        Muxes := 1     
+	   3 Input    7 Bit        Muxes := 1     
+	   5 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 11    
+	   4 Input    4 Bit        Muxes := 3     
+	   5 Input    3 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 15    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3917] design top has port seg[3] driven by constant 0
+WARNING: [Synth 8-3917] design top has port seg[0] driven by constant 0
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1230.734 ; gain = 661.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1340.387 ; gain = 771.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1371.242 ; gain = 802.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1371.242 ; gain = 802.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1567.750 ; gain = 998.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1567.750 ; gain = 998.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1567.750 ; gain = 998.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1567.750 ; gain = 998.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1567.750 ; gain = 998.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1567.750 ; gain = 998.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_mmcm      |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |clk_mmcm |     1|
+|2     |CARRY4   |    15|
+|3     |LUT1     |    14|
+|4     |LUT2     |    17|
+|5     |LUT3     |    21|
+|6     |LUT4     |    23|
+|7     |LUT5     |     9|
+|8     |LUT6     |    19|
+|9     |FDRE     |    73|
+|10    |IBUF     |     4|
+|11    |OBUF     |    25|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1567.750 ; gain = 998.559
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 1567.750 ; gain = 912.547
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1567.750 ; gain = 998.559
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1567.750 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 15 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1567.750 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 3c59c234
+INFO: [Common 17-83] Releasing license: Synthesis
+44 Infos, 80 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:32 . Memory (MB): peak = 1567.750 ; gain = 1189.082
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1567.750 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Ryab Ranjitkar/Documents/ECE3829/ECE3829_Lab2/ECE3829_Lab2.runs/synth_1/top.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Feb 11 04:03:51 2025...

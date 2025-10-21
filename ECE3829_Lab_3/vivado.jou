@@ -1,0 +1,244 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Fri Feb 21 07:46:57 2025
+# Process ID         : 7756
+# Current directory  : C:/Users/Ryab Ranjitkar/AppData/Roaming/Xilinx/Vivado
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent4320
+# Log file           : C:/Users/Ryab Ranjitkar/AppData/Roaming/Xilinx/Vivado/vivado.log
+# Journal file       : C:/Users/Ryab Ranjitkar/AppData/Roaming/Xilinx/Vivado\vivado.jou
+# Running On         : YourMum
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 19045
+# Processor Detail   : AMD Ryzen 7 5800X 8-Core Processor             
+# CPU Frequency      : 3793 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 34278 MB
+# Swap memory        : 5100 MB
+# Total Virtual      : 39378 MB
+# Available Virtual  : 25923 MB
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Ryab Ranjitkar/ECE3829_Lab_3/ECE3829_Lab_3.xpr}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{C:/Users/Ryab Ranjitkar/ECE3829_Lab_3/ECE3829_Lab_3.srcs/sources_1/new/w.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/Ryab Ranjitkar/ECE3829_Lab_3/ECE3829_Lab_3.srcs/sources_1/new/w.v}}
+close [ open {C:/Users/Ryab Ranjitkar/ECE3829_Lab_3/ECE3829_Lab_3.srcs/sources_1/new/top.v} w ]
+add_files {{C:/Users/Ryab Ranjitkar/ECE3829_Lab_3/ECE3829_Lab_3.srcs/sources_1/new/top.v}}
+update_compile_order -fileset sources_1
+open_project {C:/Users/Ryab Ranjitkar/Documents/ECE3829/ECE3829_Lab2/ECE3829_Lab2.xpr}
+update_compile_order -fileset sources_1
+current_project ECE3829_Lab_3
+close [ open {C:/Users/Ryab Ranjitkar/ECE3829_Lab_3/ECE3829_Lab_3.srcs/sources_1/new/seven_seg_display.v} w ]
+add_files {{C:/Users/Ryab Ranjitkar/ECE3829_Lab_3/ECE3829_Lab_3.srcs/sources_1/new/seven_seg_display.v}}
+update_compile_order -fileset sources_1
+current_project ECE3829_Lab2
+current_project ECE3829_Lab_3
+close [ open {C:/Users/Ryab Ranjitkar/ECE3829_Lab_3/ECE3829_Lab_3.srcs/sources_1/new/an_cycle.v} w ]
+add_files {{C:/Users/Ryab Ranjitkar/ECE3829_Lab_3/ECE3829_Lab_3.srcs/sources_1/new/an_cycle.v}}
+update_compile_order -fileset sources_1
+current_project ECE3829_Lab2
+current_project ECE3829_Lab_3
+close [ open {C:/Users/Ryab Ranjitkar/ECE3829_Lab_3/ECE3829_Lab_3.srcs/sources_1/new/seg_sel.v} w ]
+add_files {{C:/Users/Ryab Ranjitkar/ECE3829_Lab_3/ECE3829_Lab_3.srcs/sources_1/new/seg_sel.v}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+create_ip -name clk_wiz -vendor xilinx.com -library ip -version 6.0 -module_name clk_wiz_0
+set_property -dict [list \
+  CONFIG.CLKOUT1_JITTER {290.478} \
+  CONFIG.CLKOUT1_PHASE_ERROR {133.882} \
+  CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {10.000} \
+  CONFIG.CLK_OUT1_PORT {clk_10MHz} \
+  CONFIG.MMCM_CLKFBOUT_MULT_F {15.625} \
+  CONFIG.MMCM_CLKOUT0_DIVIDE_F {78.125} \
+  CONFIG.MMCM_DIVCLK_DIVIDE {2} \
+] [get_ips clk_wiz_0]
+generate_target {instantiation_template} [get_files {{c:/Users/Ryab Ranjitkar/ECE3829_Lab_3/ECE3829_Lab_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci}}]
+current_project ECE3829_Lab2
+current_project ECE3829_Lab_3
+update_compile_order -fileset sources_1
+generate_target all [get_files  {{c:/Users/Ryab Ranjitkar/ECE3829_Lab_3/ECE3829_Lab_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci}}]
+current_project ECE3829_Lab2
+current_project ECE3829_Lab_3
+current_project ECE3829_Lab2
+current_project ECE3829_Lab_3
+generate_target all [get_files  {{c:/Users/Ryab Ranjitkar/ECE3829_Lab_3/ECE3829_Lab_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci}}]
+catch { config_ip_cache -export [get_ips -all clk_wiz_0] }
+export_ip_user_files -of_objects [get_files {{c:/Users/Ryab Ranjitkar/ECE3829_Lab_3/ECE3829_Lab_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci}}] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{c:/Users/Ryab Ranjitkar/ECE3829_Lab_3/ECE3829_Lab_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci}}]
+launch_runs clk_wiz_0_synth_1 -jobs 6
+wait_on_run clk_wiz_0_synth_1
+export_simulation -lib_map_path [list {modelsim=C:/Users/Ryab Ranjitkar/ECE3829_Lab_3/ECE3829_Lab_3.cache/compile_simlib/modelsim} {questa=C:/Users/Ryab Ranjitkar/ECE3829_Lab_3/ECE3829_Lab_3.cache/compile_simlib/questa} {riviera=C:/Users/Ryab Ranjitkar/ECE3829_Lab_3/ECE3829_Lab_3.cache/compile_simlib/riviera} {activehdl=C:/Users/Ryab Ranjitkar/ECE3829_Lab_3/ECE3829_Lab_3.cache/compile_simlib/activehdl}] -of_objects [get_files {{c:/Users/Ryab Ranjitkar/ECE3829_Lab_3/ECE3829_Lab_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci}}] -directory {C:/Users/Ryab Ranjitkar/ECE3829_Lab_3/ECE3829_Lab_3.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/Ryab Ranjitkar/ECE3829_Lab_3/ECE3829_Lab_3.ip_user_files} -ipstatic_source_dir {C:/Users/Ryab Ranjitkar/ECE3829_Lab_3/ECE3829_Lab_3.ip_user_files/ipstatic} -use_ip_compiled_libs -force -quiet
+current_project ECE3829_Lab2
+current_project ECE3829_Lab_3
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Ryab Ranjitkar/ECE3829_Lab_3/ECE3829_Lab_3.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Ryab Ranjitkar/ECE3829_Lab_3/ECE3829_Lab_3.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw_manager
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Ryab Ranjitkar/ECE3829_Lab_3/ECE3829_Lab_3.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Ryab Ranjitkar/ECE3829_Lab_3/ECE3829_Lab_3.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Ryab Ranjitkar/ECE3829_Lab_3/ECE3829_Lab_3.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Ryab Ranjitkar/ECE3829_Lab_3/ECE3829_Lab_3.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw_manager
+current_project ECE3829_Lab2
+close_project
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Ryab Ranjitkar/ECE3829_Lab_3/ECE3829_Lab_3.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+open_run impl_1
+close_design
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Ryab Ranjitkar/ECE3829_Lab_3/ECE3829_Lab_3.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Ryab Ranjitkar/ECE3829_Lab_3/ECE3829_Lab_3.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Ryab Ranjitkar/ECE3829_Lab_3/ECE3829_Lab_3.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Ryab Ranjitkar/ECE3829_Lab_3/ECE3829_Lab_3.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw_manager
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Ryab Ranjitkar/ECE3829_Lab_3/ECE3829_Lab_3.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw_manager
+close [ open {C:/Users/Ryab Ranjitkar/ECE3829_Lab_3/ECE3829_Lab_3.srcs/sources_1/new/clock_gen.v} w ]
+add_files {{C:/Users/Ryab Ranjitkar/ECE3829_Lab_3/ECE3829_Lab_3.srcs/sources_1/new/clock_gen.v}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Ryab Ranjitkar/ECE3829_Lab_3/ECE3829_Lab_3.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Ryab Ranjitkar/ECE3829_Lab_3/ECE3829_Lab_3.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw_manager
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Ryab Ranjitkar/ECE3829_Lab_3/ECE3829_Lab_3.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Ryab Ranjitkar/ECE3829_Lab_3/ECE3829_Lab_3.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+reset_run impl_1 -prev_step 
+reset_run impl_1 -prev_step 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+close_hw_manager
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Ryab Ranjitkar/ECE3829_Lab_3/ECE3829_Lab_3.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Ryab Ranjitkar/ECE3829_Lab_3/ECE3829_Lab_3.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw_manager
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Ryab Ranjitkar/ECE3829_Lab_3/ECE3829_Lab_3.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Ryab Ranjitkar/ECE3829_Lab_3/ECE3829_Lab_3.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw_manager
+archive_project {C:/Users/Ryab Ranjitkar/Desktop/ECE3829_Lab_3.xpr.zip} -temp_dir {C:/Users/Ryab Ranjitkar/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-7756-YourMum} -force -include_local_ip_cache -include_config_settings

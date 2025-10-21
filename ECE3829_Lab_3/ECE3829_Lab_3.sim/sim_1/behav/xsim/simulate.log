@@ -1,0 +1,6 @@
+Time resolution is 1 ps
+PASS: Expected = 55, Received = 55 at time =             18000000 ps
+PASS: Expected = ff, Received = ff at time =             36000000 ps
+PASS: Expected = a9, Received = a9 at time =             54000000 ps
+PASS: Expected = 53, Received = 53 at time =             72000000 ps
+$stop called at time : 74 us : File "C:/Users/Ryab Ranjitkar/ECE3829_Lab_3/ECE3829_Lab_3.srcs/sim_1/new/ALS_PMOD_BFM_tb.v" Line 54

@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Fri Feb 21 08:04:15 2025
+# Process ID         : 12004
+# Current directory  : C:/Users/Ryab Ranjitkar/ECE3829_Lab_3/ECE3829_Lab_3.runs/clk_wiz_0_synth_1
+# Command line       : vivado.exe -log clk_wiz_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source clk_wiz_0.tcl
+# Log file           : C:/Users/Ryab Ranjitkar/ECE3829_Lab_3/ECE3829_Lab_3.runs/clk_wiz_0_synth_1/clk_wiz_0.vds
+# Journal file       : C:/Users/Ryab Ranjitkar/ECE3829_Lab_3/ECE3829_Lab_3.runs/clk_wiz_0_synth_1\vivado.jou
+# Running On         : YourMum
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 19045
+# Processor Detail   : AMD Ryzen 7 5800X 8-Core Processor             
+# CPU Frequency      : 3793 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 34278 MB
+# Swap memory        : 5100 MB
+# Total Virtual      : 39378 MB
+# Available Virtual  : 25234 MB
+#-----------------------------------------------------------
+source clk_wiz_0.tcl -notrace
